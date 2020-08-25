@@ -1,0 +1,245 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+
+header {
+    background-image: url("../img/Layer 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    color: white;
+    /* position: fixed;
+    top: 0; */
+}
+
+nav {    
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;        
+}
+
+nav span {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+nav ul {    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: -0.2em;    
+}
+
+nav ul li {
+    margin-left: 2em;    
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12em;
+    padding: 2.15em;
+}
+
+.hello h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.hello button {
+    width: 2em;
+    height: 2em;
+    background-color: #19bd9a;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    transform: rotate(90deg);  
+    align-self: center;
+    margin-top: 9em;
+}
+
+/* Section with THIS  */
+
+.this {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    padding: 3em 0 3em 0;
+}
+
+.this .text-box {
+    margin: auto;
+    width: 50%;
+}
+
+.text-box h2 {
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.text-box p {
+    color: grey;
+    margin-bottom: 2em;
+}
+
+.text-box button {
+    width: 8em;
+    height: 2.5em;
+    background-color: white;
+    border-radius: 35%;
+    border: 1px solid black;    
+}
+
+/* Details section */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    color: #a4a7ac;
+
+}
+
+.icon-box {
+    text-align: center;
+    margin: 5em 0 5em 0;
+}
+
+.icon-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: -0.2em; 
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: -3em;
+}
+
+.icon-box li {
+    border: 1px solid grey;
+    background-color: #57534b;
+    border-radius: 50%;
+    padding: .5em;
+    margin-left: 1em;
+}
+
+.icon-box li img {
+    width: 2em;
+    height: 2em;
+    margin: auto;
+}
+
+.descr {
+    display: flex;
+    flex-direction: row;
+    margin: 0 6em 0 6em;
+    padding-bottom: 4em;
+}
+
+.icon-box h3 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+
+.descr div {
+    margin-top: -2.5em;
+}
+
+#det-text {
+    margin-left: 6em;
+}
+
+.icon-box li:hover {
+    background-color: #19bd9a;
+}
+.descr span {
+    color: #19bd9a;
+}
+
+/* Projects header */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em;
+    color: #a4a7ac;
+}
+.projects h3 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.project-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient( #19bd9a, rgba(25,189,154, 0.1) ), url('../img/Layer 4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    color: white;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+}
+
+.img-box img {
+    width: 20%;
+    height: 20em;
+}
+
+.img-box img:first-child {
+    width: 60%;
+}
+
+.img-box img:hover {
+    width: 60%;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em 0 1em 0; 
+    height: 20%;
+}
+
+.submit button {
+    width: 8em;
+    height: 2.5em;
+    background-color: inherit;
+    border-radius: 35%;
+    border: 1px solid white;
+    margin-top: 0.5em;   
+    color: white;
+}
